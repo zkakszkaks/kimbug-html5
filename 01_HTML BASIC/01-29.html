@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML문서의 대제목</title>
+    <!-- 검색 최적화에 매우 중요-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!--link:css-->
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- style 코드 : HTMl문서내에 CSS 코드를 작성할 때, 그런데 쓰면 안됨.-->
+    <style>
+      * {
+        font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+      }
+
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>kimbug</h1>
+    <!-- 검새 최적화는 기본
+     title 잘 쓰는 법
+     1. 키워드 단순 나열은 비추
+     2. 페이지마다 그에 맞게 변경
+     무엇에 관한 내용인지 센스있게
+
+     검색 엔진 최적화(Search Engine Optimization)
+
+     
+    -->
+    <p>
+      안녕하세요 김버그입니다
+    </p>
+    <!--https://spoqa.github.io/spoqa-han-sans/en-US/ -->
+
+    <script src="./app.js"></script>
+    <script>
+      var h1 = document.querySelector("h1");
+      h1.addEventListener("click", function(event) {
+        this.textContent = "hi";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 파일 Media</title>
+  </head>
+  <body>
+    <audio src="./assets/audios/kimbug.mp3" loop></audio
+    ><!--autoplay controls-->
+    <audio controls>
+      <source src="./assets/audios/kimbug.wav" type="audio/wav" />
+      <source src="./assets/audios/kimbug.mp3" type="audio/mpeg" />
+      <source src="./assets/audios/kimbug.ogg" type="audio/ogg" />
+      <p>
+        브라우저 크롬 사용 하는게 어떤가요?
+      </p>
+    </audio>
+
+    <!-- html audio 구글 검색-->
+    <!-- https://caniuse.com/#search=mp3 -->
+    <!-- https://caniuse.com/#search=wav -->
+    <video controls src="./assets/videos/kimbug.mov"></video>
+
+    <video controls>
+      <!-- autoplay loop-->
+      <source src="./assets/videos/kimbug.mov" type="video/mp4" />
+      <source src="./assets/videos/kimbug.mp4" type="video/mp4" />
+      <p>
+        브라우저를 업데이트 하심이 어떠신지요?
+      </p>
+      <a href="https://browshappy.com">브라우저 업데이트 하기</a>
+    </video>
+
+    <iframe src="https://edu.goorm.io" frameborder="0"></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/PxngYI8_D6U"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
