@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정의리스트 Description List</title>
+  </head>
+  <body>
+    <!--
+      [01] dl 사용 용도 (description list)
+      1. 용어를 정의할 때 사용하는 정의 리스트(용어를 정의할 때)
+      2. key-value로 정보를 제공할 때 (이름:김버그, 직업:프론트엔드 개발자)
+
+      dl, dt, dd, dfn
+      dl: description list : 정의 리스트 시작을 알림.
+      dt: description term : 이름:김버그 에서 이름(key)에 해당하는 것을 마크업 할 때 사용한다. 용어 혹은 키값
+      dd: description data : 용어또는 키값에 대한 설명
+
+      dfn: 사전적으로 의미를 좀더 구체적으로 정의 내리고 싶을 때는 dt 용어를 나타내는 태그 안에 definition에 약자인 dfn을 쓰게 된다.
+    -->
+    <dl>
+      <dt><dfn>학습</dfn></dt>
+      <dd>
+        배워서 익히는 일.교육학에서는, 지식의획득, 인식의발전, 습관의 형성 등을
+        목표로 하는 의식적 행동을 가리킴
+      </dd>
+      <dd>
+        심리적·행동적 경험을 쌓음으로써 ㅎ애동의 양태가 변화발전하는 일
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>김버그</dt>
+      <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+    </dl>
+
+    <dl>
+      <dt>
+        <dfn>development</dfn>
+        <!-- 모든 dd 는 바로 앞에나온 dt에 대한 설명이다.-->
+      </dt>
+      <dd>1. [U] 발달, 성장</dd>
+      <dd>2. [U, C] (신제품의) 개발; 신개발품</dd>
+    </dl>
+
+    <dl>
+      <dt>김버그</dt>
+      <dt>kimbug</dt>
+      <!-- dt 다음 dt 같은 내용이거나 비슷한 계열 이것도 맞는 예시 임.-->
+      <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+    </dl>
+
+    <!-- 아래도 맞는 예시 김버그에대한 2개의 정의가 있는 것이다.-->
+    <dl>
+      <dt>김버그</dt>
+      <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+      <dd>
+        <a href="https://youtube.com/c/kimbug">김버그 채널</a>
+      </dd>
+    </dl>
+
+    <!-- 아래도 맞는 예시 : 혼합케이스 dt2개 dd2개-->
+    <dl>
+      <dt>김버그</dt>
+      <dt>Kimbug</dt>
+      <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+      <dd>
+        <a href="https://youtube.com/c/kimbug">김버그 채널</a>
+      </dd>
+    </dl>
+
+    <!-- div: division 이라는 태그-->
+    <!-- 아래도 올바른 예시-->
+    <dl>
+      <div>
+        <dt>사과</dt>
+        <dd>사과에 대한 설명</dd>
+      </div>
+      <div>
+        <dt>바나나</dt>
+        <dd>바나나에 대한 설명</dd>
+      </div>
+    </dl>
+
+    <!--
+      아래 부터는 나쁜 사용 형태
+    -->
+    <dl>
+      <dt>김버그</dt>
+      <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+      <dt>데벨업</dt>
+    </dl>
+    <dl>
+      <section>
+        <dt>김버그</dt>
+        <dd>주니어 개발자의 성장 드라마를 다루는 유튜브 채널입니다</dd>
+      </section>
+    </dl>
+
+    <dt>
+      김버그
+    </dt>
+  </body>
+</html>
