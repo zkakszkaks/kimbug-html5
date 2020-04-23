@@ -1,11 +1,13 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 * {
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: -0.03em;
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "SpoqaHanSans";
   font-size: 16px;
   line-height: 1.5;
   color: #1f2d3d;
@@ -19,127 +21,102 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-color: #f8f9fa;
+  background-color: #1f2d3d;
 }
 
 body::after {
   content: "kimbug©";
   display: block;
   margin-top: 50px;
-  color: #1f2d3d;
+  color: #fff;
   font-size: 12px;
   font-weight: 600;
 }
 
-/* Breadcrumb */
-
-.breadcrumb {
+.product-card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 56px;
-  font-size: 1.125rem;
-  color: #0366d6;
+  padding: 32px 48px 24px;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
-.breadcrumb::before {
+.product-card:hover .product-card-image::after {
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.product-card-image {
+  order: 1;
+  position: relative;
+}
+
+.product-card-image img {
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.product-card-image::after {
   content: "";
-  display: block;
-  width: 22px;
-  height: 22px;
-  margin-right: 4px;
-  background-color: transparent;
-  background-position: center center;
-  background-size: contain;
-  background-image: url("./assets/icon-repository.svg");
-  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: 8px;
+  width: 75%;
+  height: 0;
+  padding-bottom: 75%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: box-shadow 250ms ease-in;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.65);
 }
 
-.breadcrumb a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb a:first-child::after {
-  content: "/";
-  padding: 0 4px 0 8px;
-  color: #586069;
-}
-
-/* Pagination */
-
-.pagination {
+.product-card-title {
+  order: 3;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-  background-color: #fff;
-  border: 1px solid #e1e4e8;
+  margin-bottom: 16px;
 }
 
-.pagination a,
-.pagination button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 12px;
+.product-card-title h1 {
+  font-size: 18px;
+  line-height: 1.3333333333;
+  color: #212529;
+}
+
+.product-card-title strong {
+  padding: 0 5px 0 4px;
+  border-radius: 4px;
+  margin-left: 8px;
   font-size: 13px;
-  font-weight: 500;
-  color: #0366d6;
-  text-decoration: none;
-}
-
-.pagination > a:first-child {
-  border-radius: 3px 0 0 3px;
-}
-
-.pagination > a:last-child {
-  border-radius: 0 3px 3px 0;
-}
-
-.pagination ol button {
-  background-color: #fff;
-  border: none;
-}
-
-.pagination ol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  list-style-type: none;
-  background-color: #fff;
-}
-
-.pagination li {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 32px;
-  border-right: 1px solid #e1e4e8;
-  font-size: 13px;
-  font-weight: 500;
-  color: #0366d6;
-}
-
-.pagination li.disabled {
-  background-color: #fafbfc;
-}
-
-.pagination li.current-page {
-  border-color: #0366d6;
-  background-color: #0366d6;
-}
-
-.pagination li.current-page a {
+  line-height: 20px;
   color: #fff;
+  background-color: #0257c7;
 }
 
-.pagination *[disabled],
-.pagination .disabled {
-  color: #d1d5da;
-  background-color: #fafbfc;
+.product-card-author {
+  order: 2;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #80868e;
+}
+
+.product-card-review {
+  order: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4px;
+  font-size: 14px;
+}
+
+.fas {
+  color: #ffcf14;
+  margin-right: -1px;
 }
