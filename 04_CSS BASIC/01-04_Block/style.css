@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  background-color: #e5e9f2;
+}
+
+.child,
+.other {
+  height: 50px;
+
+  color: #212529;
+  line-height: 50px;
+  text-indent: 20px;
+}
+
+.child {
+  margin-left: auto; /* 자동으로 생기는 마진을 왼쪽으로 몰빵*/
+  margin-right: auto;
+  background-color: #ffc82c;
+  width: 500px;
+}
+
+.other {
+  background-color: #ff4949;
+  width: 100px;
+}

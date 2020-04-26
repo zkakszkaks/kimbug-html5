@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  /* 대부분의 프론트엔드 개발자는 box-sizing: border-box를 깔고 시작
+     우리의 상식(?)에 맞게 동작하는 박스를 위한 강경한 조치
+  */
+}
+body {
+  font-family: "Poppins";
+}
+
+.box {
+  border: 4px solid #000;
+  width: 430px;
+  height: 440px;
+  padding-top: 40px;
+  padding-left: 50px;
+  background-color: #0066ff;
+  color: #fff;
+
+  /* box-sizing: content-box; | border-box; 
+     박스의 사이즈를 잡는 법
+     content-box: width, height 값이 content 박스만의 값으로 설정이 된다.
+     
+  */
+}
+
+.box-1 {
+  border: 4px solid #000;
+  box-sizing: border-box;
+  width: 480px;
+  height: 480px;
+  padding-top: 40px;
+  padding-left: 50px;
+  background-color: skyblue;
+  color: #fff;
+
+  /* box-sizing: content-box; | border-box; 
+     박스의 사이즈를 잡는 법
+     content-box: width, height 값이 content 박스만의 값으로 설정이 된다.
+     
+  */
+}
