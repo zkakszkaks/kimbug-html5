@@ -1,0 +1,40 @@
+<!--
+  
+  position: fixed을 보워보자.
+  position: absolute를 사용했을 때와 완전히 동일한 현상이 일어남
+  1. 집 나간 내 새끼, 찾을 길 없네 (동일)
+  2. 블록으로 신분상승 (동일)
+  3. 길막을 못해 슬픈 블록아! (동일)
+  4. 플로트, 나만 볼 수 있어요(feat. 인라인) (이건 아님)
+
+  fixed와 absolute의 차이점
+  - fixed는 자신의 기준점이 명확하게 정해져 있다.
+  - fixed는 viewport 사이즈를 기준으로 자신을 위치 시키게 된다.
+
+  viewport: 브라우저 창의 전체 크기를 뷰포트 라고 한다.
+
+  top, right, bottom, left
+
+  z-index: position 된 요소들의 수직방향 레벨 을 알려줌 (position:static 제외)
+  z-index:2 <- 이게 앞에 보임.
+  z-index:1
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child red">Child</div>
+        <div class="child yellow">Child</div>
+        <div class="child blue">Child</div>
+      </div>
+    </div>
+  </body>
+</html>
