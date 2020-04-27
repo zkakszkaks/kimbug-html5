@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+span {
+  color: #fff;
+  background-color: #0066ff;
+  padding-left: 40px;
+  padding-right: 100px;
+  /* padding-top: 100px; 쓰면 안됨*/
+  /* margin-bottom: 100px; 쓰면 안됨*/
+  margin-right: 120px;
+}

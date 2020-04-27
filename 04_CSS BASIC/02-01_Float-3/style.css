@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+.parent {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #eff2f7;
+}
+.child {
+  /* width: 200px;
+  height: 200px; */
+  line-height: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.red {
+  background-color: #ff4949;
+  float: left; /* float 하게 되면 실제 컨텐츠 가진 만큼 붕 뜨게 된다 글씨 길이만큼 너비를 갖음 블록이지만 너비가 컨텐츠 너비 만큼 갖음*/
+}
+
+.yellow {
+  background-color: #ffc82c;
+}
+
+.blue {
+  background-color: #0066ff;
+}

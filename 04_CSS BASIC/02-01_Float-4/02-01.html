@@ -1,0 +1,34 @@
+<!--
+  float을 배우는 이유: 블록 요소들을 가로배치 하기 위해서
+
+  블록은 자기 다음에 오는 요소들이 자기 영역을 침범하지 않게 길막에 특화된 녀석
+  블록의 가로배치를 해주는 게 float
+
+  1. float을 사용하면 무슨일이 일어나는지 what happens
+  float을 이용해 가로배치를 성공하지만 레이아웃을 얼마나 망가뜨리는지 공부하게 됨.
+  2. Hot to fix it (float으로 망가진 레이아웃을 어떻게 바로 잡을수 있을지)
+
+  float : 떠다니는 느낌
+
+  float으로 뛰우면 빈공간에 옆상자가 당겨짐. 부모상자도 flaot된 상자의 영역은 감싸지 않고 영역을 줄여버림
+  float먹이면 bloack 박스로 신분상승 inline, inline block, block => block 이됨
+  블록인데 길막을 하지 못 하는 블록 이된다.
+
+  float으로 뛰우면 블록타입인데 자동으로 생기는 margin이 생기지 않는다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child red">Child</div>
+      <div class="child yellow">Child</div>
+      <div class="child blue">Child</div>
+    </div>
+  </body>
+</html>
