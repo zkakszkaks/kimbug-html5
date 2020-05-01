@@ -1,0 +1,56 @@
+/* 내가 투자하는 시간만큼 개발자 실력은 향상 된다고 하더라고 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+.parent {
+  /* align-content를 사용할때 의미가 있으려면 flex-wrap이 wrap이 되어야 한다*/
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  /*justify-content: flex-end; /* flex-start, center, flext-end, space-between */
+  /* float은 가운데 정렬 안됨 */
+  /* space-between : 요소 사이의 간격을 같게 해줌*/
+  /* space-around 양 옆에 간격이 같음 */
+
+  /* align-items: center; */
+
+  /* flex-wrap:wrap 이면 이상황에서는 플렉스라인이 2개가 생김
+    align-items은 하나의 coross axis를 기준으로 정렬
+    flex-wrap이 wrap이라서 축이 두개 생기더라도 전체를 기준으로 하나로 생각하고 하고 싶다 => align-content
+  */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #eff2f7;
+}
+
+.child {
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.red {
+  background-color: #ff4949;
+  order: 3;
+}
+
+.yellow {
+  background-color: #ffc82c;
+  order: 1;
+}
+
+.blue {
+  background-color: #0066ff;
+  order: 2;
+}

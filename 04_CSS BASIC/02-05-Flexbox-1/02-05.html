@@ -1,0 +1,67 @@
+<!--
+  [01] Flexbox
+  1. 정렬의 끝판왕
+
+  How it works (x)
+  Hot to use it(o)
+  
+  잘 사용하는 발법에 대해서만 알면 됨.
+
+  [02] 플렉스박스를 쓸때 알아야할 4가지 사고
+
+  1. 나, 플렉스박스 쓸거임(단호) - 선언
+  2. 가로 정렬? 세로 정렬?
+  3. 무조건 한 줄 안에 다 정렬? - 한줄안에 다 우겨 넣을지 여러줄을 만들지 결정
+  4. 씐나는 플렉스박스 파티 타입!
+
+  Step1 나, 플렉스박스 쓸거임 (단호)
+
+  display: box의 타입을 정해주는 css property
+  flex: 블록이랑 대게 비슷한데 블록은 할수없는 요소를 쉽게 정렬하는 기능
+  inline-flex: 인라인 처럼 노는데 인라인은 할 수 없는 거를 할 수 있다네
+
+  정렬하려는 요소들을 지니고 있는 부모 박스에 선언을 한다.
+
+  Step1 정렬하고 하는 요소를 감싸는 부모에게 display: flex;
+
+  Step 2 가로 정렬? 세로 정렬? direction(방향)
+  flex-direction: row | row-reverse \ column | column-reverse ;
+  정렬을 할대 가로 방향(row)으로 정렬을 할지 세로방향(column)으로 정렬을 할지 정해 줌.
+
+  flex를 사용하면 우리눈에는 보이지 않는 두 개의 축(Axis)이 생긴다.
+  flex-direction 이 row, column 인지 에 따라 두개의 축(Axis)이(축의 방향) 완전히 달라진다.
+
+  Main axis(flex direction의 방향에 따라 생긴다.), Cross axis(Main과 정확하게 수직을 이루는 방향으로 생긴다.)
+  row - 가로 - 왼쪽에서 부터 오른쪽으로 흐르는 방향
+
+
+  flex-direction: columns;
+  위에서 부터 아래로가 main axis 왼쪽에서 오른쪽으로 가는 축이 cross axis
+
+  reverse(반대)
+  row-reverse
+  main-axis 오른쪽에서 왼쪽으로 흐르는 방향
+  cross axis 위에서 아래로 흐르는 방향으로 생김
+
+  column-reverse
+  밑에서 부터 위로 흐르게 main-axis 생김
+  cross-axis는 왼쪽에서 오른쪽으로 흐르는 방향으로
+
+  main과 cross를 반드시 기억해야 정렬할때 편하다.
+
+  Step3 무조건 한 줄 안에 다 정렬?
+  flex-wrap: nowrap; /* nowrap | wrap */
+  nowrap : 감싸지 wrap 않고 자식의 사이즈를 줄여서라도 한 줄로 정렬해 버리는 flex-wrap: nowrap
+  한 줄에 모두 정렬하기에 공간이 넉넉하지 않으면 여러 줄을 만들어 버리는 flex-wrap: wrap;
+
+
+  나, 플렉스박스 쓸거임 (단호)
+  가로 정렬? 세로 정렬?
+  무조건 한 줄 안에 다 정렬?
+  씐나는 플렉스박스 파티 타임!
+-->
+<style>
+  .flexbox {
+    display: flex; /* flex | inline-flex */
+  }
+</style>
