@@ -1,0 +1,109 @@
+<!--
+  Typography를 css로 설정하는 법에 대해서 공부
+
+  타이포그래프 깅의는 크게 두 섹션으로 이루어져 있다.
+  1. Essentials: 타이포그래스 설정을 할때 중점적으로 사용하는 거 배움
+  2. and etc...: 자주 사용하지는 않지만 알아둬야 하는 속성들
+
+  [01] 타이포그래피
+  1. 디자인에 있어서 활자의 서체나 글자 배치 등의 구성 및 표현 (=> 텍스트를 예쁘게 디자인 한다.)
+  2. 사용자에게 읽기 좋은 디자인을 제공 하는 것.
+  [02] 웹이라는게 결국은 정보를 공유하는 매개체 이다. 그리고 그 정보의 대다수는 텍스트로 되어있다.
+
+  프론트엔드 개발자 입장에서는 디자이너가 만들어 놓은 타이포그래피 디자인을 그대로 코드로 옮기면 되다.
+
+  font size - 글씨의 크기
+  baseline
+  line-height(줄 간격)
+  letter-spacing(글자와 글자 사이)
+  글자 굵기
+  글자 서체
+  글자 색
+
+  font size를 설정할때 사용할 수 있는 단위 3가지 => px, em, rem
+
+  [01] px 
+  1. 절대 단위(Abolute unit)
+  
+  [02] em, rm
+  1. 상대 단위(Relative unit) - 상대적으로 비례한 값을 표현한다.
+
+  [03] em
+  1. equal to capital M(대문자 M이 크기를 기준으로 한다.)
+  2. 실제로 적용된 폰트 사이즈를 1em으로 본다.
+
+  p태그에 font-size가 24px이면 1em=24px이 된다.
+  20em은? 1em이 24px이니까 20em = 20em * 24px = 480px
+
+  font-size 쓸때 em 쓰는 것을 사람들이 좋아하지 않음.
+
+  [04] rem = root em
+  1. root = html태그 자체를 뜻함
+  2. html태그 에 적용된 폰트 사이즈를 1rem 으로 본다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <p>
+        Qui nisi culpa irure mollit non enim veniam sit. Ex eiusmod ut
+        exercitation laborum do. Mollit elit occaecat non Lorem esse irure
+        cillum fugiat veniam irure anim. Ut eu id non sit esse consectetur
+        cillum minim eiusmod laboris nostrud est reprehenderit. Id non duis aute
+        eu duis fugiat dolor veniam aliqua nostrud sunt. Dolor sint occaecat
+        Lorem irure reprehenderit ullamco sint elit Lorem fugiat cupidatat in
+        ipsum cupidatat. Officia dolore esse exercitation eiusmod ipsum
+        consequat tempor Lorem eu incididunt duis. Pariatur nisi ipsum irure et
+        nisi. Enim aute ad anim labore aute proident et esse enim. Adipisicing
+        incididunt deserunt anim commodo deserunt elit dolore anim est mollit.
+        Ipsum minim amet nostrud sit in ea laborum amet officia nostrud.
+        Incididunt qui Lorem non pariatur. Labore cupidatat fugiat do
+        reprehenderit fugiat cupidatat et. Sunt fugiat ea ex elit laborum aliqua
+        irure consectetur non ullamco aliqua excepteur sit consectetur. Anim ad
+        consequat irure elit. Aliquip cillum nulla veniam pariatur do consequat
+        non nisi excepteur culpa officia do commodo ea. Quis irure et magna
+        dolore id dolor sunt qui elit minim mollit nisi in. Proident cillum
+        mollit cillum sit dolor laboris. Do voluptate fugiat veniam exercitation
+        eiusmod eiusmod cillum reprehenderit nostrud laborum do cillum magna
+        velit. Consequat non magna qui proident nisi incididunt do ad duis
+        voluptate proident. Aliqua ex cupidatat voluptate officia nisi. Ut
+        adipisicing sunt officia ullamco veniam minim fugiat ex cillum. Laborum
+        velit consectetur esse minim et. Ullamco aliquip deserunt ut
+        reprehenderit ad. Voluptate dolore elit magna culpa fugiat elit veniam
+        qui. Mollit dolor exercitation adipisicing sint enim tempor irure sint
+        occaecat consequat. Officia do amet ut Lorem duis. Do ipsum aliquip est
+        eiusmod incididunt incididunt. Tempor ut esse amet officia. Consequat
+        velit cillum consequat irure elit voluptate fugiat eiusmod. Commodo nisi
+        ea aute dolore ea pariatur nisi nulla veniam dolore ut culpa esse
+        tempor. Enim velit tempor esse laborum ex ad laborum exercitation non
+        aliqua nulla labore minim. Ut adipisicing et dolore fugiat id qui labore
+        aliquip ex reprehenderit et officia nostrud. Labore excepteur eu tempor
+        in sunt do aute ullamco aliqua. Tempor ut qui duis aliqua nisi dolore
+        officia non dolor irure nisi fugiat esse velit. Minim enim qui ut amet
+        do veniam veniam mollit Lorem dolor culpa dolor. Ad cillum labore ipsum
+        labore occaecat qui in ut sint commodo mollit consequat. Velit
+        consectetur minim irure reprehenderit aliquip est sunt voluptate.
+        Aliquip sit ea velit fugiat commodo tempor dolor ex voluptate. Cupidatat
+        excepteur duis adipisicing labore duis fugiat consectetur excepteur
+        velit voluptate ipsum. Ut qui reprehenderit ad laborum enim consequat
+        elit anim minim. Minim et ut culpa nulla culpa aliquip. Voluptate et
+        enim sint aliqua consectetur mollit. Eiusmod eiusmod nisi amet magna
+        nulla ut aute et cupidatat exercitation. Ut in ex enim laborum commodo
+        nisi. Mollit exercitation eu incididunt irure ex tempor veniam ex do
+        mollit ex quis. Ipsum ipsum do ea dolore. Dolor Lorem incididunt laboris
+        ullamco adipisicing anim aliquip magna magna. Elit sunt pariatur
+        incididunt veniam laboris reprehenderit proident magna. Occaecat et
+        voluptate dolore nostrud qui ea ipsum deserunt labore consectetur amet
+        commodo ea. Eu culpa est in deserunt occaecat exercitation minim do ea
+        labore. Fugiat commodo esse eiusmod cillum nulla id sunt anim Lorem
+        exercitation.
+      </p>
+    </div>
+  </body>
+</html>
