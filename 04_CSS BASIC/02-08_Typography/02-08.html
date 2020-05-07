@@ -1,0 +1,61 @@
+<!-- 이번 시간에는 중요하진 않지만 알아둬야할 속성들에 대해 공부함.
+
+[01] text-align
+1. 글자를 정렬할 때 사용
+2. align: 정렬을 하다. 
+3. 사용할 수 있는 값 3가지: left | right | center
+
+[02] text-indent
+1. 들여쓰기 할 때 사용
+2. 문단의 첫째 줄이 들여쓰기 된다.
+3. 마이너스 값도 쓸 수 있다.
+p {
+    text-indent: -100px;
+}
+
+[03] text-transform
+1. transform : 변형 이라는 뜻
+2. 텍스트가 변형된다는 뜻.
+3. 알파벳만 가능
+4. none | capitalize | uppercase | lowercase
+
+1. kim bug - none
+2. Kim Bug - capitalize
+3. KIM BUG - uppercase
+4. kim bug - lowercase
+
+[04] text-decoration
+1. decoration : 꾸미다
+2. 텍스트에 줄을 긋는 속성
+3. none | undreline | line-through | overline
+4. a(앵커) 태그 밑줄 없앨때 많이 사용함.
+
+[05] font-style
+1. normal | italic(기울어진글자) | oblique(거의 사용하지 않음)
+2. <em></em> 태그가 기울어진 상태임. 기본으로 먹여 있는 이탤릭을 해제할때 사용
+
+[06] font- vs text- 차이 
+1. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, id, commodi hic enim, unde impedit velit distinctio perferendis dolorum eius sunt! Dolorem quibusdam cupiditate sapiente sed eius minima beatae, error aut maxime quae veritatis, ullam natus voluptates corporis consequuntur amet reprehenderit maiores pariatur velit ducimus itaque, assumenda illo sequi in? Modi quos, quidem, inventore aperiam maxime quam, vitae asperiores dolore officiis ullam earum illo assumenda accusamus esse reiciendis repellendus mollitia dolorem non similique dicta architecto ad neque exercitationem! Alias nemo cumque nam accusamus ipsam! Odio cupiditate enim sit deleniti voluptatibus. Harum minus quas nemo ipsa, quibusdam quaerat laboriosam sed tempore.</p>
+    <section>
+        <h1>text-decoration</h1>
+        <ul>
+            <li style="text-decoration: none;">none</li>
+            <li style="text-decoration: underline;">underline</li>
+            <li style="text-decoration: line-through;">line-through</li>
+            <li style="text-decoration: overline;">overline</li>
+        </ul>
+    </section>
+</body>
+</html>

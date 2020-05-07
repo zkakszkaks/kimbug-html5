@@ -1,0 +1,28 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 736px; /* 길이를 최대 736px 까지만 키우고 그다음은 키우지 마라 */
+    margin: 0 auto;
+    padding: 48px;
+}
+
+h1 {
+    margin-bottom: 48px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+h3 {
+    margin-bttom: 8px;
+}
+
+p {
+    margin-bottom: 32px;
+}
