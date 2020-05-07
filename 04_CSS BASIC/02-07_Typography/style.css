@@ -20,5 +20,9 @@ body {
 } */
 
 p {
-  font-size: 3rem;
+  font-size: 1rem; /* font-size: 20px */
+  line-height: 2.5; /* 20 * 2.5 = 50px*/
+  letter-spacing: -0.01em;/* 자간을 글자에 비례해서 1%정도 줄이고 싶다 -1/100 = -0.01 */
+  font-weight: 700;
+  color: rgba(0, 102, 255, 0.5)
 }

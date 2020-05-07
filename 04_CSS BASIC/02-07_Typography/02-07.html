@@ -40,6 +40,99 @@
   [04] rem = root em
   1. root = html태그 자체를 뜻함
   2. html태그 에 적용된 폰트 사이즈를 1rem 으로 본다.
+
+  [] line-height
+  1. 줄 높이, 줄 간격을 뜻함
+  2. 3개의 단위 사용 가능 - px. em, rem 사용가능
+  px - 절대값
+  em - 지금 이 요소한테 적용되어있는 폰트사이즈를 기준으로 몇 배를 줄것인가
+  3. line-height를 표현할때는 em을 많이 사용한다.
+  4. line-heightt를 px이나 rem으로 표현할때는 반드시 단위를 적어줘야 하지만 fpt-size와 비례해서 em으로 표현할때는 단위를 적어주지 않아도 된다.
+  5. em을 생략하는게 관례이다.
+  .text {
+    font-size: 16px;
+    line-height: 1.5
+  }
+  아래아한글 줄간격 150% 해당 폰트사이즈에 비례해서 150%를 먹이겠다는 이야기다
+
+  html {
+    font-size: 20px;
+  }
+  p {
+    font-size: 1rem: /* 20px */
+  }
+  p태그의 줄간격이  30px이 되었으면 좋겠다
+  line-height: 1.5;
+  30px / 20px = 1.5;
+  
+  [05] line height 가 몇이 되든 글씨가 줄간격의 가운데에 배치가 된다.
+  font-size는 글씨의 크기이다.(base line위 글자 영역만큼의 크기이다.)
+  
+  [06] letter-spacing
+  글자와 글자 사이의 자간
+
+  [07] letter-spacing을 표현할때 사용할 수 있는 단위
+  1. px
+  2. em - 많이 사용, em을 사용하는게 좋은 관례, 이 요소한테 적용된 폰트사이즈에 비례해서 줄인다.
+     em을 생략하면 안된다. 반드시 적어줘야함.
+  3. rem (x) 잘 사용하지 않음
+
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.03em;
+  }
+  자간
+  -1.5% => -0.015em;
+  -5% -> -0.05em;
+  -1% => -0.01em;
+
+
+  [08] font-family
+  1. font 서체를 표현할때 사용하는 속성
+  
+  .text {
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  font-family: "Poppins";
+  poppins라는 서체를 적용해라.
+
+  font-family: "Poppins", sans-serif;
+  poppins라는 폰트를 적용해 그게 없다면  sans-serif중 아무거나 너어서 보여줘
+
+  font-family: "Poppins", "Roboto", sans-serif;
+  poppins라는 서체를 적용해줘. 그게 없다면 roboto 라는 서체도 적용해줘. 
+  그것도 없다면 아무  sans-serif 계열에 서체를 써줘.
+
+
+  serif체(명조체) sans-serif 계열(돋움, 고딕)
+
+  Poppins는  sans-serif체 계열
+
+  [09] font-weight
+  폰트에서 무게 = 폰트 굵기
+  font-weight: 400;
+  /* 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 */ 
+
+  100 - Thin
+  300 - Light
+  400 - Regular (중요)
+  500 - Medium
+  700 - Bold (중요)
+  900 - Black
+
+  [10] color
+  글씨에 사용하고 싶은 색상값 설정
+
+  [11] color를 적용할 때 사용할 수 있는 방식 3가지
+  1. hex - #0066ff;
+  2. rgb - rgb(0, 102, 255)
+  3. rgba - rgba(0, 102, 255, 1)
+
+  rgba = alpha 투명도 1이면 완전히 불투명 0 이면 완전히 투명
+  0.5면 50%투명
 -->
 <!DOCTYPE html>
 <html lang="en">

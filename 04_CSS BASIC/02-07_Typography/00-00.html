@@ -1,0 +1,92 @@
+<!--
+1. font-size (rem)
+2. line-height (em)
+3. letter-spacing (em)
+
+ [01] font-size (rem)
+ 1. px이나 rem 사용
+ 2. 반응형, 하이브리드앱 같은 경우에는 rem을 사용해야 할것 같다.
+
+ [02] rem = root em
+ 1. root = html 태그 자체를 뜻 함.
+ 2. html태그에 적용된 폰트 사이즈를 1rem으로 본다.
+
+ [03] em
+ 1. 해당 대크에 실제로 적용된 폰트 사이즈를 1em으로 본다.
+
+ [04] line-height (em)
+ 1. 줄 높이, 줄 간격을 뜻함.
+ 2. em을 많이 사용한다.
+ 3. em은 생략하는게 관례이다.
+ 
+ [05] 줄간격 150%
+
+.text {
+    font-size: 16px;
+    line-height: 1.5
+}
+아래아한글 줄간격 150% => 해당 폰트 사이즈에 비례해서 150%를 먹이겠다.
+
+
+[06] p태그의 줄간격이 30px이 되었으면 좋겠다.
+hrml {
+    font-size: 20px;
+}
+p {
+    font-size: 1rem; /* 20px */
+    line-height: 1.5; /* 30px / 20px = 1.5; */
+}
+
+
+[07] letter-spacing (em)
+1. 글자와 글자 사이의 자간
+2. px아니면 em인데 em사용하는게 좋은 관례
+[08] 
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.03em;
+}
+
+자간
+-1.5% => -0.015em;
+-5% -> -0.05em;
+-1% -> -0.01em;
+
+
+[09] font-family
+1.  font 서체를 표현
+
+.text {
+    font-family: "Poppins", sans-serif;
+}
+
+.text {
+    font-family: "명조체", serif;
+}
+serif체 계열 - 명조체
+sans-serif 계얄 - 돋움, 고딕
+
+[10] font-weight
+1. 폰트 굵기
+2. font-weight: 400;
+  /* 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 */ 
+
+100 - Thin
+  300 - Light
+  400 - Regular (중요)
+  500 - Medium
+  700 - Bold (중요)
+  900 - Black
+
+[11] color를 적용할 때 사용할 수 있는 방식 3가지
+  글씨에 사용하고 싶은 색상값 설정
+
+1. hex - #0066ff;
+2. rgb - rgb(0, 102, 255)
+3. rgba - rgba(0, 102, 255, 1)
+
+
+  rgba = alpha 투명도 1이면 완전히 불투명 0 이면 완전히 투명
+  0.5면 50%투명
+-->
