@@ -1,0 +1,33 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  background-color:#000;
+}
+
+.card-image.vertical img {
+  width: 100%;
+  height: auto;
+}
+.card-image.horizontal img {
+  width: auto;
+  height: 100%;
+}
