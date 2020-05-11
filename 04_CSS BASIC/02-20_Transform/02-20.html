@@ -1,0 +1,61 @@
+<!--
+[01] transform
+1. 변형하다 라는 뜻.
+2. 요소를 2차원 혹은 3차원의 공간에서 변형하고 싶은데로 변형할수있음.
+3. transform이 진정한  CSS 장인들의 세계라고 생각함.
+
+https://github.com/cyanharlow/purecss-lace :html, css 만으로 그린 그림 transform 사용함
+
+[02] 여러가지가 있지만 3개만 알아봄.
+1. translate();
+2. scale()
+3. rotate()
+
+[03] translate(x,y)
+1. position: absolute를 가운데 배치하는데 예전에 사용함.
+2. 어떤 요소를 내가 원하는 방향으로 위치시키고 싶을 때 사용
+3. 모든 트랜스폼 함수들에 적용됨 => 다른위치로 이동해도 원래 위치를 기억을 한다. 다른 주변에 있는 요소들한테 영향을 주지 않는다.
+transform: translate(40px, 50px);
+transform: translate(-40px, -50px);
+translateX, translateY
+
+transform: translate(100%, 100%); %를 사용하면 트랜스폼이 먹은 자기자신의 사이즈를 기준으로 이동한다.
+%를 사용하면 x축은 width값기준 y축은 height값 기준으로 이동한다<div class="">
+
+[04] scale(N)
+1. 사이즈를 키우고 줄이고 할때 사용하는 함수
+2. 안에 넣은 숫자의 배율만큼 사이즈를 조절하게 된다
+3. 1을 넣으면 본래 사이즈를 유지 한다.
+4. 2넣으면 2배 커지고
+5. 0.5 넣으면 줄어듦
+6. 자기의 본래 사이즈는 무조건 기억하고 있어서 다른 요소에 영향을 끼치지 않는다
+7. scale(x,y) 깂을 두개 적으면 x: 자기의 width값이 비율, y:자기의 height값에 비율이 적용됨. 
+
+[05] rotate(Ndeg)
+1. 어떤 요소의 각도를 돌려줄때 사용
+2. 360deg는 한 바퀴 도는 거다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box"></div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quae? Eligendi, eos eaque? Excepturi, quod. Fugiat non at laudantium ullam in maxime architecto quis! Ipsa commodi nostrum aut soluta minima.
+    Quia at saepe odit. Deserunt repudiandae eius laudantium distinctio iure, animi delectus asperiores vitae ut explicabo voluptatibus, rem autem necessitatibus, ab vero sint neque. Maiores suscipit quasi molestias reprehenderit officiis.
+    Maxime tempora quae molestiae sequi, amet quo nam consequatur aperiam voluptas et, enim veniam repellat neque eligendi voluptatibus nesciunt exercitationem aliquid! Nemo fugit, consectetur a eum eveniet vero accusamus harum.
+    Corrupti ipsam repudiandae libero, ipsum deleniti dignissimos earum molestiae accusantium autem eaque magni ipsa ducimus asperiores dolor error a recusandae placeat fugit saepe consequuntur similique quos. Repudiandae soluta autem maxime.
+    Voluptas doloribus nostrum officiis earum asperiores veniam soluta aperiam obcaecati, et quidem nemo excepturi omnis, alias odio aliquam! Culpa animi dolorum voluptatem doloribus libero blanditiis alias velit soluta? Obcaecati, molestiae.
+    Autem impedit dolorum quod odio exercitationem facilis magnam quisquam perferendis quidem minima, aut officia possimus iure voluptatum temporibus sapiente aspernatur nisi sunt. Quisquam inventore enim totam temporibus labore, sunt veniam!
+    Veniam placeat laborum nisi possimus repellendus? Perferendis necessitatibus, mollitia, illo quis illum corrupti molestiae iure esse dolor eligendi officiis maxime cupiditate quidem! Esse labore recusandae autem a! Ipsam, accusantium corporis.
+    Laudantium velit nihil eum odit consectetur dolore natus cupiditate, commodi fugit sint, fugiat ratione excepturi magnam. Ut culpa, illum, iusto amet quam dolores modi numquam est odit, hic earum voluptatum?
+    Enim obcaecati labore error fuga, quae ea nobis omnis accusantium minus in ratione recusandae voluptas odit ipsum perspiciatis eaque repellat repudiandae voluptatibus consectetur. Nam ducimus libero perferendis sit molestiae iste.
+    Explicabo vitae numquam repellendus iste asperiores reiciendis omnis architecto dignissimos fugiat. Dolorem vero, ipsa ad doloremque cupiditate, eveniet similique molestias magnam pariatur nam quas ratione obcaecati quia, facilis nisi quaerat.
+  </p>
+</body>
+</html>

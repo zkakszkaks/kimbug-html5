@@ -1,0 +1,54 @@
+<!-- 자식, 자손, 형제 선택자 
+[01] Child, Descendant & Sibling Combinators
+
+[02] 자식 선택자
+1. parent > child
+[03] 자손 선택자
+1. parent descendants
+
+[04] 형제 선택자
+1. parent + sibling
+2. parent ~ sibling'
+'
+.active ~ li : active클래스 다음에 오는 모든 li
+.active + li : active다음에오는 li 한개에 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h1>Heading</h1>
+    <ul>
+      <li>
+        <h1>Heading in list item</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis deleniti tempora nesciunt. Magnam omnis a quisquam in, veniam quas culpa quia autem, nam perspiciatis ut nulla aspernatur iusto ducimus ipsam?
+        Consectetur sint culpa laboriosam nisi provident facilis doloribus nihil similique voluptatibus unde molestiae modi quo asperiores quas accusantium vel quod in a et eveniet distinctio, dolorem repellat. Doloribus, unde nihil?
+        Iste voluptates excepturi dignissimos, numquam incidunt facere ipsa molestiae obcaecati soluta minus? Iste officiis nihil a at id aliquid qui quam accusantium. Mollitia assumenda amet non iure veniam id voluptatum!</p>
+      </li>
+      <li>
+        <h1>Heading in list item</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis deleniti tempora nesciunt. Magnam omnis a quisquam in, veniam quas culpa quia autem, nam perspiciatis ut nulla aspernatur iusto ducimus ipsam?
+        Consectetur sint culpa laboriosam nisi provident facilis doloribus nihil similique voluptatibus unde molestiae modi quo asperiores quas accusantium vel quod in a et eveniet distinctio, dolorem repellat. Doloribus, unde nihil?
+        Iste voluptates excepturi dignissimos, numquam incidunt facere ipsa molestiae obcaecati soluta minus? Iste officiis nihil a at id aliquid qui quam accusantium. Mollitia assumenda amet non iure veniam id voluptatum!</p>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1>Sibling comvinators</h1>
+    <ol>
+      <li>Do something</li>
+      <li class="active">Do something else</li>
+      <li>Create something</li>
+      <li>Create something else</li>
+      <li>Make something</li>
+      <li>Make something else</li>
+    </ol>
+  </section>
+</body>
+</html>
