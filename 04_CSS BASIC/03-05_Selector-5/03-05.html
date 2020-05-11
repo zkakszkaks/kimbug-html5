@@ -1,0 +1,48 @@
+<!--
+올림픽 금메달 순위 방식과 같다.
+
+1. 금메달: ID(id selector)#
+2. 은메달: Class(클래스 선택자)., Pseudo-class(가상 선택자):
+3. 동메달: Type(요소 선택자)
+
+1. 단 하나의  id를 쓰는게 10개의 클래스를 쓰는 것보다 강력하다.
+
+2. 
+.box p { //이게 적용됨
+  color:blue;
+}
+p {
+  color: hotpink;
+}
+
+3. 점수 합산 방식
+#gnb.tab-nav 금메달, 은메달
+header.main-header 동메달, 은메달
+#gnb.tab-nav ul 금메달 은메달 동메달
+#gnb.tab-nav ul:last-child 금메달 은메달 2개 동메달
+
+[04] Rule Breakers
+1. inline style
+2. !important (inline style보다 더 강력하다.)
+<p style="font-size: 32px;">
+</p>
+
+
+* {
+  color: hotpink !important;
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="text" class="a b c d e f g h i j k l m n o"
+    style="color:#ffc82c;"
+  >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas provident totam pariatur rerum obcaecati accusantium quos natus illo officia consequatur?</p>
+</body>
+</html>
