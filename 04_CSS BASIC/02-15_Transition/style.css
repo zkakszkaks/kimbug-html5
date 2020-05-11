@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+}
+
+.line-button {
+    position: relative;
+    padding: 18px 30px;
+    font-size: 16px;
+    line-height: 1.25; /* 20px / 16px = 1.25 */
+    color: #151826;
+    cursor: pointer;
+}
+
+.line-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* 0을 적을때는 0px 적지 않고, 0만 적어주는게 정석 */
+    height: 2px;
+    background-color: #0066FF;
+    transition: width 250ms ease-in, background-color 250ms ease-in; /* 작은 버튼 같은 거에 250ms 많이 씀 */
+}
+
+.line-button:hover::after {
+    width: 100%;
+    background-color: hotpink;
+}

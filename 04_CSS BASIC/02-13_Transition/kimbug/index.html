@@ -1,0 +1,56 @@
+<!--
+[01] transition
+1. 스타일링을 하다보면 어떤 요소의 속성값이 바뀌어야 하는 경우가 생김.
+2. 애니메이션을 줘서 자연스럽게 변화도록 하기 위해
+3. 변화가 스르륵 일어나도록 해줌.
+4. property, duration, [timing-function] [delay] 4가지를 알아야함. 4가지를 선언해 주어야 함. []안에 있는 것은 생략이 가능
+
+[02] property
+1. css 속성
+2. 변화 일어날 속성이 어떤 것인지에 대해서 명시해 준다.
+
+[03] duration
+1. 지속시간(몇초 동안)
+2. 어떤 트랜지션이 일어날때 트랜지션의 변화가 얼마동안 일어나는지에 대해서 설정해 주는 것
+3. 시간을 설정할때 사용할수 있는 단위 ms(밀리 세컨드) s(세컨드)
+4. 1,000ms === 1s
+
+[04] timing-function
+1. 변화의 속도를 지정할 수 있다.
+2. ease-in | ease-out | ease-in-out | cubic-bezier()
+3. ease-in : 처음에 천천히 바뀌다가 나중에 휙 바뀜
+4. ease-out : 처음에 확 바뀌다가 나중에 천천히 바뀌는 친구들
+5. ease-in-out: 짬뽕
+6. cubic-bezier(): 변화의 가속도를 내가 제어 하고 싶을 때.
+
+[05] cubic-bezier
+https://cubic-bezier.com/
+1. linear : 등속운동
+2. 분홍색이 cubic-bezier() 펑션을 먹인거임
+3. cubic-bezier() 곡선을 만드는 펑션
+
+[06] delay
+1. 지연됬다는 뜻. (몇 초후에 트랜지션이 작동한다.)
+2. 트랜지션이 몇 초 후에 일어났으면 할 때.
+3. ms
+
+[07] 두개의 속성을 각기 다르게 트랜지션을 적용 한다.
+1. 작업을 하다보면 좀 더 섬세하게 컨트롤 하고 싶을 때가 있다
+2. font-size, background-color에 각기 다른 트랜지션을 먹이고 싶다.
+3. transition: font-size 1000ms ease-out, background-color 2000ms cubic-bezier(.19,.41,1,-0.57) 1000ms;
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      Hello Box
+    </div>
+  </body>
+</html>

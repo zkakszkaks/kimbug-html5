@@ -1,0 +1,67 @@
+<!--
+[01] animation vs transition(전환)
+1. transition음 속성의값이 스스륵 전환하면서 부드럽게 바뀔때 사용
+2. animation:  애니메이션을 주고 싶을 때 사용, 자유도가 더 크다.
+
+[02] transition
+1. property duration [timing-function] [delay]
+
+[03] animation-property
+1. animation-name
+
+[04] @keyframes
+1. @keyframes 를 사용해서 어떤 애니메이션을 줄건지 결정을 해야함.
+2. 영상 편집에서 나온 단어
+3. 프레임별로 
+4. 애니메이션 시작에서 끝으로 갈때 어떻게 애니메이션이 동작하는지 정의해줌
+
+@keyframes name {
+    from {
+        /* Rules */
+    }
+
+    to {
+        /* Rules */
+    }
+}
+
+@keyframes name {
+    0% {
+        /* Rules */
+    }
+
+    50% {
+        /* Rules */
+    }
+
+    100% {
+        /* Rules */
+    }
+}
+
+[05]
+1. animation-name: move-box;(애니메이션 이름)
+2. animation-duration(지속시간) : 이 애니메이셤이 몇초동안 진행이 될 것인가. ms, s단위 사용
+3. animation-timing-function: ease-in, ease-out, ease-in-out, cubic-bezier()
+   변화하는 속도가 어떤 식으로 진행 될 지에 대한 디자인을 하는 녀석임.
+4. delay: ms, s 단위 사용, 몇 초 후에 애니메이션 실행
+5. animation-iteration-count: 애니메이션에만 사용, 되풀이를 몇 번 할 것인가에 대한 선언
+   정수를 적거나 infinite(무한)을 적음
+6. animation-direction: 방향이라는 뜻, 애니메이션이 진행이 되때 어떤 방향으로 진행이 될지.
+    reverse로 지정하면 to에서 from으로 진행이 된다.
+    alternate으로 지정하면 번갈아 진행 된다.
+
+https://developer.mozilla.org/ko/docs/Web/CSS/animation
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
