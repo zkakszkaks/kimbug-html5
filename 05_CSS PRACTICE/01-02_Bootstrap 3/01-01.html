@@ -1,0 +1,33 @@
+<!--
+  각각의 브레이크 포인트마다 컬럼의 사이즈를 다르게 할 수 있다.
+
+  뷰포트 너비가 676px이상 되었을때 컬럼이 6칸만 차지 했으면 좋겠다.(현재 col-12인데) => col-sm-6 클래스를 추가해 준다. 
+  sm: small이라는 뜻.
+
+  768px 이상이 되었을때 컬럼이 4간이 되었으면 좋겠다. => col-md-4 클래스 추가(미디엄)
+  992x  이상 부터는 3칸  => col-lg-3 클래스 추가(라지)
+  1200px이상 부터는 2칸 => col-xl-2(엑스라지)
+
+  아래 사이트 들어가서 읽어보기
+  https://getbootstrap.com/docs/4.5/layout/overview/
+  https://getbootstrap.com/docs/4.5/layout/grid/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap Grid System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <p>column</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
