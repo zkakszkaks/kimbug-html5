@@ -71,12 +71,32 @@ p {
 .fill-button:hover {
   opacity: 0.5;
 }
+
+.section {
+  padding: 80px 0;
+}
+.section-category {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5; /* 24 / 16 */
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  margin-bottom: 24px;
+  font-size: 34px;
+  line-height: 1.058823529411765; /* 36 / 34 */
+  letter-spacing: -0.03em;
+  color: #2b292d;
+}
 /* Landing */
 /* 데스크탑 신경쓰지 말고 일단 모바일만 보고 만든다 */
 .landing {
   background-color: #fdded8;
   text-align: center;
 }
+
 
 .landing-content {
   display: flex;
@@ -119,9 +139,87 @@ p {
   line-height: 1.363636363636364; /* 30 / 22 */
   letter-spacing: -0.04em; /* -4% */
   color: #2b292d;
+  letter-spacing: -0.01em;
 }
 .service .col-12:first-child {
   margin-bottom: 40px;
+}
+
+.program .row:first-child{
+  margin-bottom: 32px;
+}
+
+.program .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+  margin-bottom: 0;
+}
+
+/* Program */
+.program .section-category {
+  color: #009b4d;
+}
+
+.program-card {
+  text-align: center;
+  display: block;
+  padding: 24px 0 32px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: background-color 300ms ease-in-out,
+  box-shadow 300ms ease-in-out;
+}
+
+.program-card:hover {
+  box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
+  background-color: #3141c5;
+}
+
+.program-card:hover strong {
+  color: #fff;
+}
+
+.program-card img {
+  display: block;
+  width: auto;
+  height: 195px;
+  margin:0 auto 16px;
+}
+
+.program-card strong {
+  font-size: 18px;
+  line-height: 1.333333333333333;/* 24 / 18 */
+  letter-spacing: -0.02em;
+  transition: color 500ms ease-in-out;
+}
+
+/* Curriculum */
+.curriculum .row:first-child {
+  margin-bottom: 48px;
+}
+.curriculum .row:last-child .col-12:first-child{
+  margin-bottom: 40px;
+
+}
+.curriculum .section-category {
+  color: #0189d1;
+}
+
+.curriculum .section-desc {
+  margin-bottom: 32px;
+}
+
+.curriculum-image {
+  display: none;
+}
+
+.curriculum-detail-desc {
+  font-size: 15px;
+  line-height: 1.466666666666667/* 22 / 15 */;
+  color: #2b292d;
 }
 /* >= 768px: 모바일 시안과 데스크탑 시안의 중단점이 768px 이라고 적어 놓았음. */
 @media screen and (min-width: 768px) {
@@ -136,6 +234,23 @@ p {
     height: 56px;
     font-size: 18px;
     line-height: 1.555555555555556;/* 28 / 18 */
+  }
+
+  .section {
+    padding-bottom: 96px;
+  }
+
+  .section-category {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.090909090909091; /* 24 / 22 */
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+    font-size: 56px;
+    line-height: 1;
+
   }
   /* Landing */
   .landing-content {
@@ -164,6 +279,54 @@ p {
   .service-title {
     font-size: 26px;
     line-height: 1.307692307692308; /* 34 / 16 */
+  }
+
+  /* Program */
+  .program {
+    text-align: center;
+  }
+
+  .program .row:first-child{
+    margin-bottom: 72px;
+  }
+
+  .program-card img {
+    margin-bottom: 24px;
+  }
+  .program-card strong {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* Curriculum */
+  .curriculum .row:fist-child {
+    margin-bottom: 24px;
+  }
+
+  .curriculum .row:last-child .col-12:first-child{
+    margin-bottom: 0;
+
+  }
+
+  .curriculum .section-desc {
+    margin-bottom: 72px;
+  }
+
+  .curriculum-image {
+    display: block;
+  }
+
+  .curriculum-image img {
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    height: auto;
+
+  }
+  
+  .curriculum-detail-desc {
+    font-size: 18px;
+    line-height: 1.444444444444444;/* 26/ 18 */
   }
 
 }
